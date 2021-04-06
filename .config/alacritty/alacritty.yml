@@ -28,18 +28,18 @@ colors:
         white:   '#fdf6e3' # base3
 
 font:
-    size: 11
+    size: 12
     normal:
-        family: Iosevka
+        family: unscii
         style: Regular
     bold:
-        family: Iosevka
+        family: unscii
         style: Bold
     italic:
-        family: Iosevka
+        family: unscii
         style: Italic
     bold_italic:
-        family: Iosevka
+        family: unscii
         style: Bod Italic
 
 window:

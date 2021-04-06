@@ -27,18 +27,12 @@ map Q <Nop>
 set nocompatible
 set pastetoggle=<F2>
 call plug#begin()
-    Plug 'junegunn/goyo.vim'
     Plug 'itchyny/lightline.vim'
 call plug#end()
 set cursorline
 set cursorcolumn
 colorscheme solarized
-map <C-g> :Goyo<CR>
-let g:goyo_width="80%"
-let g:goyo_height="80%"
 set laststatus=2
 let g:lightline = {
     \ 'colorscheme': 'solarized',
-    \ 'separator': { 'left': '', 'right': '' },
-    \ 'subseparator': { 'left': '', 'right': '' }
     \ }
