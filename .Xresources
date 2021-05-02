@@ -46,3 +46,11 @@ Xft.rgba:             rgb
 *color14:               S_base1
 *color7:                S_base2
 *color15:               S_base3
+
+URxvt.font: xft:unscii:size=12
+URxvt.boldFont:
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.scrollBar: false
+URxvt.iso14755: false
+URxvt.iso14755_52: false
