@@ -65,4 +65,7 @@ cmd touch %{{
 }}
 map mf push :touch<space>
 
+cmd open-with %"$@" $fx
+map ` push :open-with<space>
+
 set shell zsh
