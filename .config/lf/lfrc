@@ -32,7 +32,6 @@ cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
 map m
 map o
 map n
-map c
 map e
 map f
 map "'"

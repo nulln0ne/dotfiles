@@ -31,8 +31,8 @@ call plug#begin()
 call plug#end()
 set cursorline
 set cursorcolumn
-colorscheme nord
+colorscheme solarized
 set laststatus=2
 let g:lightline = {
-    \ 'colorscheme': 'nord',
+    \ 'colorscheme': 'solarized',
     \ }
