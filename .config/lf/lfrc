@@ -12,14 +12,14 @@ cmd unarchive ${{
 
 cmd open ${{
     case $(file --mime-type $f -b) in
-        text/*) $EDITOR $fx;;
+        text/*) nvim $fx;;
         image/*) sxiv $fx;;
         audio/*) mpv $fx;;
         video/*) mpv $fx;;
         application/pdf) zathura $fx;;
         application/epub+zip) zathura $fx;;
         application/epub) zathura $fx;;
-        *) for f in $fx; do $OPENER $f & done;;
+        *) for f in $fx; do nvim $f & done;;
     esac
 }}
 
@@ -36,7 +36,7 @@ map e
 map f
 map "'"
 map '"'
-
+map <enter> open
 map az zip
 map at tar
 map ag targz
@@ -44,7 +44,6 @@ map ab tarbz2
 map au unarchive
 map . set hidden!
 map DD delete
-map <enter> open
 map p paste
 map d cut
 map y copy
@@ -58,6 +57,8 @@ cmd mkdir %{{
 }}
 map md push :mkdir<space>
 
+set shell zsh
+
 cmd touch %{{
     IFS=" "
     touch -- "$*"
@@ -67,5 +68,3 @@ map mf push :touch<space>
 
 cmd open-with %"$@" $fx
 map ` push :open-with<space>
-
-set shell zsh

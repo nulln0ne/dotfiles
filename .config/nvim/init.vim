@@ -29,8 +29,6 @@ set pastetoggle=<F2>
 call plug#begin()
     Plug 'itchyny/lightline.vim'
 call plug#end()
-set cursorline
-set cursorcolumn
 colorscheme solarized
 set laststatus=2
 let g:lightline = {
