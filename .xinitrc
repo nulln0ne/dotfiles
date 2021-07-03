@@ -6,6 +6,7 @@ hsetroot -solid "#073642" &
 luastatus -b dwm -B separator=' ' ~/.local/share/luastatus/xkb.lua \
                                                   ~/.local/share/luastatus/alsa.lua \
                                                   ~/.local/share/luastatus/battery.lua \
-                                                  ~/.local/share/luastatus/backlight.lua &
+                                                  ~/.local/share/luastatus/backlight.lua \
+                                                  ~/.local/share/luastatus/time-date.lua &
 xrdb .Xresources
 exec dwm
