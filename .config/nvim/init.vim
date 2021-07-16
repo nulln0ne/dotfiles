@@ -21,7 +21,6 @@ set clipboard+=unnamedplus
 set relativenumber number
 set encoding=utf-8
 set noshowmode
-map <C-n> :tabnew<CR>
 map q <Nop>
 map Q <Nop>
 set nocompatible

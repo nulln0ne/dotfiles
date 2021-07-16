@@ -1,25 +1,40 @@
 cmd unarchive ${{
-  case "$f" in
-      *.zip) unzip "$f";;
-      *.tar.xz) tar -xvf "$f";;
-      *.tar.gz) tar -xzvf "$f";;
-      *.tar.bz2) tar -xjvf "$f";;
-      *.tar) tar -xvf "$f";;
-      *) echo "Unsupported format";;
-  esac
+    case "$f" in
+        *.zip) unzip "$f";;
+        *.tar.xz) tar -xvf "$f";;
+        *.tar.gz) tar -xzvf "$f";;
+        *.tar.bz2) tar -xjvf "$f";;
+        *.tar) tar -xvf "$f";;
+        *) echo "Unsupported format";;
+    esac
 }}
 
-
 cmd open ${{
-    case $(file --mime-type $f -b) in
-        text/*) nvim $fx;;
-        image/*) sxiv $fx;;
-        audio/*) mpv $fx;;
-        video/*) mpv $fx;;
-        application/pdf) zathura $fx;;
-        application/epub+zip) zathura $fx;;
-        application/epub) zathura $fx;;
-        *) for f in $fx; do nvim $f & done;;
+    case "$f" in
+        *.pdf)  zathura "$f";;
+        *.epub) zathura "$f";;
+        *.jpg)  sxiv    "$f";;
+        *.jpeg) sxiv    "$f";;
+        *.png)  sxiv    "$f";;
+        *.xpm)  sxiv    "$f";;
+        *.gif)  sxiv    "$f";;
+        *.bmp)  sxiv    "$f";;
+        *.avi)  mpv     "$f";;
+        *.flv)  mpv     "$f";;
+        *.wav)  mpv     "$f";;
+        *.webm) mpv     "$f";;
+        *.wma)  mpv     "$f";;
+        *.wmv)  mpv     "$f";;
+        *.m2v)  mpv     "$f";;
+        *.m4a)  mpv     "$f";;
+        *.m4v)  mpv     "$f";;
+        *.mkv)  mpv     "$f";;
+        *.mov)  mpv     "$f";;
+        *.mp3)  mpv     "$f";;
+        *.mp4)  mpv     "$f";;
+        *.mpeg) mpv     "$f";;
+        *.mpg)  mpv     "$f";;
+        *)      nvim    "$f";;
     esac
 }}
 
