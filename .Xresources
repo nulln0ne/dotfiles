@@ -63,7 +63,7 @@ Xft.rgba:             rgb
 *color7:                S_base2
 *color15:               S_base3
 
-URxvt.font: xft:iosevka:size=11
+URxvt.font: xft:terminus:size=11
 URxvt.boldFont:
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard

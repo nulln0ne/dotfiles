@@ -1,4 +1,4 @@
-set font "iosevka 10"
+set font "terminus 10"
 
 # zathurarc-dark
 set notification-error-bg       "#586e75" # base01  # seem not work

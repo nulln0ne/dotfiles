@@ -57,7 +57,7 @@ cmd mkdir %{{
 }}
 map md push :mkdir<space>
 
-set shell oksh
+set shell ksh
 
 cmd touch %{{
     IFS=" "
