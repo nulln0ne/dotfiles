@@ -33,7 +33,7 @@ cmd open ${{
         *.mp4)  mpv     "$f";;
         *.mpeg) mpv     "$f";;
         *.mpg)  mpv     "$f";;
-        *)      vim     "$f";;
+        *)      vis     "$f";;
     esac
 }}
 cmd mkdir %{{
