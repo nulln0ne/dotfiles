@@ -8,7 +8,6 @@ cmd unarchive ${{
         *) echo "Unsupported format";;
     esac
 }}
-
 cmd open ${{
     case "$f" in
         *.pdf)  zathura "$f";;
@@ -37,13 +36,31 @@ cmd open ${{
         *)    nvim    "$f";;
     esac
 }}
-
+cmd mkdir %{{
+    IFS=" "
+    mkdir -p -- "$*"
+    lf -remote "send $id select \"$*\""
+}}
+cmd touch %{{
+    IFS=" "
+    touch -- "$*"
+    lf -remote "send $id select \"$*\""
+}}
+cmd open-with %"$@" $fx
 cmd zip %zip -r "$f" "$f"
 cmd tar %tar cvf "$f.tar" "$f"
 cmd targz %tar cvzf "$f.tar.gz" "$f"
 cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
 
-
+map au unarchive
+map az zip
+map at tar
+map ag targz
+map ab tarbz2
+map <enter> open
+map ` push :open-with<space>
+map md push :mkdir<space>
+map mf push :touch<space>
 map m
 map o
 map n
@@ -51,12 +68,6 @@ map e
 map f
 map "'"
 map '"'
-map <enter> open
-map az zip
-map at tar
-map ag targz
-map ab tarbz2
-map au unarchive
 map . set hidden!
 map DD delete
 map p paste
@@ -65,22 +76,5 @@ map y copy
 map A rename
 map <c-r> reload
 
-cmd mkdir %{{
-    IFS=" "
-    mkdir -p -- "$*"
-    lf -remote "send $id select \"$*\""
-}}
-map md push :mkdir<space>
-
 set shell ksh
-
-cmd touch %{{
-    IFS=" "
-    touch -- "$*"
-    lf -remote "send $id select \"$*\""
-}}
-map mf push :touch<space>
-
-cmd open-with %"$@" $fx
-map ` push :open-with<space>
 set drawbox
