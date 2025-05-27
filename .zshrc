@@ -12,9 +12,6 @@ export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 eval "$(zoxide init zsh)"
 alias cd='z'
 
-# Added by Windsurf - Next
-export PATH="/Users/hinko/.codeium/windsurf/bin:$PATH"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
