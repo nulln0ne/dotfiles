@@ -1,0 +1,54 @@
+tap "oven-sh/bun"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Platform built on V8 to build network applications
+brew "node"
+# Password manager
+brew "pass"
+# Pass extension for managing one-time-password tokens
+brew "pass-otp"
+# Object-relational database system
+brew "postgresql@17"
+# Persistent key-value database, with built-in net interface
+brew "redis"
+# Safe, concurrent, practical language
+brew "rust"
+# In-memory database and Lua application server
+brew "tarantool"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
+# Application uninstaller
+cask "appcleaner"
+# Voice and text chat software
+cask "discord"
+cask "font-iosevka-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Collaboration platform for API development
+cask "postman"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Open-source code editor
+cask "visual-studio-code"
+vscode "eamodio.gitlens"
+vscode "golang.go"
+vscode "jdinhlife.gruvbox"
+vscode "juanblanco.solidity"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode.vscode-typescript-next"
+vscode "redis.redis-for-vscode"
