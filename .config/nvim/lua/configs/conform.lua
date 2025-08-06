@@ -1,11 +1,17 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    go = { "gofumpt" },
-    css = { "prettier" },
-    html = { "prettier" },
-    typescriptreact = { "prettier" },
-    javascriptreact = { "prettier" },
+    go = { "goimports" },
+    rust = { "ast-grep" },
+    typescript = { "prettierd" },
+    javascript = { "prettierd" },
+    typescriptreact = { "prettierd" },
+    javascriptreact = { "prettierd" },
+    css = { "prettierd" },
+    html = { "prettierd" },
+    yaml = { "prettierd" },
+    json = { "prettierd" },
+    sql = { "sql-formatter" },
   },
 
   format_on_save = {

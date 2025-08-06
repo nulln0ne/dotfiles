@@ -1,5 +1,3 @@
-ZSH_THEME="agnoster" # set by `omz`
-
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_THEME="fishy"
 

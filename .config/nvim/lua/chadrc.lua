@@ -18,12 +18,16 @@ M.base46 = {
 M.ui = {
   tabufline = {
     lazyload = false,
+    order = { "treeOffset", "buffers", "tabs" },
   },
   statusline = {
-    theme = "vscode_colored",
+    theme = "vscode",
   },
   telescope = {
     style = "bordered",
+  },
+  cmp = {
+    icons_left = true,
   },
 }
 
