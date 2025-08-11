@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "gruvbox",
+  theme = "solarized_dark",
 
   hl_override = {
     Comment = { italic = true },
@@ -25,9 +25,6 @@ M.ui = {
   },
   telescope = {
     style = "bordered",
-  },
-  cmp = {
-    icons_left = true,
   },
 }
 

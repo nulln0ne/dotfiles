@@ -1,102 +1,61 @@
 tap "oven-sh/bun"
-# Database toolkit
 brew "atlas"
-# Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
-# Official Amazon AWS command-line interface
 brew "awscli"
-# Statistics utility to count lines of code
 brew "cloc"
-# GNU File, Shell, and Text utilities
 brew "coreutils"
-# Like neofetch, but much faster because written mostly in C
+brew "delve"
+brew "eza"
 brew "fastfetch"
-# Simple, fast and user-friendly alternative to find
 brew "fd"
-# Command-line fuzzy finder written in Go
 brew "fzf"
-# Multi-platform support library with a focus on asynchronous I/O
+brew "gcc"
 brew "libuv"
-# Platform built on V8 to build network applications
 brew "node"
-# Interact with Google Gemini AI models from the command-line
 brew "gemini-cli"
-# GitHub command-line tool
-brew "gh"
-# Render markdown on the CLI
+brew "ghz"
 brew "glow"
-# Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Fast linters runner for Go
+brew "goimports"
 brew "golangci-lint"
-# Like cURL, but for gRPC
+brew "gopls"
+brew "graphviz"
 brew "grpcurl"
-# Kubernetes package manager
+brew "helix"
 brew "helm"
-# Lightweight and flexible command-line JSON processor
 brew "jq"
-# Little helper to run CNCF's k3s in Docker
 brew "k3d"
-# Modern load testing tool, using Go and JavaScript
 brew "k6"
-# Fully functional local AWS cloud stack
 brew "localstack"
-# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Password manager
 brew "pass"
-# Pass extension for managing one-time-password tokens
 brew "pass-otp"
-# CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
-# Object-relational database system
 brew "postgresql@17"
-# Protocol buffers (Google's data interchange format)
 brew "protobuf"
-# Persistent key-value database, with built-in net interface
+brew "protoc-gen-go"
+brew "protoc-gen-go-grpc"
 brew "redis"
-# Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Safe, concurrent, practical language
 brew "rust"
-# User interface to the TELNET protocol
 brew "telnet"
-# Command-line interface for running and interacting with Temporal Server and UI
 brew "temporal"
-# Tool to build, change, and version infrastructure
 brew "terraform"
-# Terminal multiplexer
 brew "tmux"
-# HTTP benchmarking tool
 brew "wrk"
-# Shell extension to navigate your filesystem faster
+brew "zig"
 brew "zoxide"
-# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
-# Application uninstaller
 cask "appcleaner"
-# Voice and text chat software
 cask "discord"
 cask "font-iosevka-nerd-font"
-# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Web browser
 cask "google-chrome"
-# Free and open-source media player
 cask "iina"
-# Blocks all Keyboard and TouchBar input
 cask "keyboardcleantool"
-# Smooths scrolling and set mouse scroll directions independently
 cask "mos"
-# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Replacement for Docker Desktop
 cask "orbstack"
-# Collaboration platform for API development
 cask "postman"
-# Control your tools with a few keystrokes
 cask "raycast"
-# Team communication and collaboration software
-cask "slack"
