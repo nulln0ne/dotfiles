@@ -16,7 +16,7 @@ defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true" && killall Fi
 
 ### 2. Keyboard Settings
 
-Disable key repeat on hold (useful for vim):
+Enable key repeat on hold (useful for vim):
 
 ```bash
 defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "false"
