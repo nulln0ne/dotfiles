@@ -1,0 +1,37 @@
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "javascript"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "typescript"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "json"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "html"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "css"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "rust"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "python"
+indent = { tab-width = 2, unit = "  " }
+
+[language-server.gopls]
+"formatting.gofumpt" = true
+

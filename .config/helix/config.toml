@@ -1,0 +1,48 @@
+theme = "gruvbox"
+
+[editor]
+true-color = true
+# line-number = "relative"
+# cursorline = true
+undercurl = true
+bufferline = "always"
+color-modes = true
+idle-timeout = 0
+smart-tab.enable = true
+jump-label-alphabet = "jfkdls;aurieowpqnvmcxz"
+rainbow-brackets = true
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "disable"
+
+[editor.indent-guides]
+render = true
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[keys.normal]
+";" = "command_mode"
+"tab" = "goto_next_buffer"
+"S-tab" = "goto_previous_buffer"
+g.q = ":bc"
+g.Q = ":bc!"
+"C-backspace".r = ":reload-all"
+
+[keys.insert]
+"C-h" = "move_char_left"
+"C-j" = "move_line_down"
+"C-k" = "move_line_up"
+"C-l" = "move_char_right"
+"C-space" = "completion"
+
+[keys.normal.space.g]
+f = "changed_file_picker"
+r = ":reset-diff-change"
+# inline blame
+b = ":run-shell-command ~/.config/helix/scripts/blame_line_pretty.sh %{buffer_name} %{cursor_line}"
+# full last commit in the line changes for the file
+B = ':open %sh{~/.config/helix/scripts/blame_file_pretty.sh %{buffer_name} %{cursor_line}}'
+# inline hunk changes
+h = ':run-shell-command ~/.config/helix/scripts/git-hunk.sh %{buffer_name} %{cursor_line} 3' 

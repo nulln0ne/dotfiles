@@ -1,11 +1,10 @@
 term = xterm-256color
-theme = Builtin Solarized Dark
+theme = GruvboxDark
 font-family = Iosevka Nerd Font
 font-size = 14
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
-window-padding-balance = true
 window-padding-x = 0
 window-padding-y = 0
-window-padding-color = extend
+keybind = shift+enter=text:\n
